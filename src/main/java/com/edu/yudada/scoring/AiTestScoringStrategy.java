@@ -106,6 +106,7 @@ public class AiTestScoringStrategy implements ScoringStrategy {
             // 2. 调用 AI 获取结果
             // 封装 Prompt
             String userMessage = getAiTestScoringUserMessage(app, questionContent, choices);
+            // userMessage表示当前题目的标题，另外后面带上用户选择的答案
             // AI 生成
             String result = aiManager.doSyncStableRequest(AI_TEST_SCORING_SYSTEM_MESSAGE, userMessage);
             // 截取需要的 JSON 信息
@@ -142,6 +143,7 @@ public class AiTestScoringStrategy implements ScoringStrategy {
      * @return
      */
     private String getAiTestScoringUserMessage(App app, List<QuestionContentDTO> questionContentDTOList, List<String> choices) {
+        // 传入的内容是题目的一个列表 对应哪一个app 用户的选项是什么
         StringBuilder userMessage = new StringBuilder();
         userMessage.append(app.getAppName()).append("\n");
         userMessage.append(app.getAppDesc()).append("\n"); //添加应用的名称和应用的描述
@@ -149,9 +151,11 @@ public class AiTestScoringStrategy implements ScoringStrategy {
         for (int i = 0; i < questionContentDTOList.size(); i++) {
             QuestionAnswerDTO questionAnswerDTO = new QuestionAnswerDTO();
             questionAnswerDTO.setTitle(questionContentDTOList.get(i).getTitle());
+            //title表示一个问题的标题 比如说你通常最喜欢做什么等等
             questionAnswerDTO.setUserAnswer(choices.get(i));
             questionAnswerDTOList.add(questionAnswerDTO);
         }
+        // 将用户的答案和选项重新封装一下，比如说 你通常最喜欢做什么 后面的choice表示A
         userMessage.append(JSONUtil.toJsonStr(questionAnswerDTOList));
         return userMessage.toString();// 返回的是一个String对象 里面包含应用的名称和描述以及一个questioncontentdto对象，
         // 这个questioncontentDto中包含一些题目的信息

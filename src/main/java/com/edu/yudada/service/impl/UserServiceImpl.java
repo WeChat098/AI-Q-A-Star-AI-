@@ -58,6 +58,10 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
             throw new BusinessException(ErrorCode.PARAMS_ERROR, "两次输入的密码不一致");
         }
         synchronized (userAccount.intern()) {
+            // 这里使用synchronized的想法是 这个时候有多个线程同时访问用户注册的方法，并且携带了一样的useraccount，那么之后插入
+            // 数据库中的内容就是一样的，这和我们设计的初衷是相悖的
+            // 另外这里使用intern方法是 在字符串常量池中，一个String只会有一个引用
+            // 所以这里使用useraccount.intern() 作为synchronized锁对象
             // 账户不能重复
             QueryWrapper<User> queryWrapper = new QueryWrapper<>();
             queryWrapper.eq("userAccount", userAccount);
@@ -105,6 +109,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         }
         // 3. 记录用户的登录态
         request.getSession().setAttribute(USER_LOGIN_STATE, user);
+        // 登录成功之后将用户的登录状态 存入到session中
+        // session的原理是通过一个key value的形式存在的
         return this.getLoginUserVO(user);
     }
 
@@ -124,7 +130,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         }
         // 从数据库查询（追求性能的话可以注释，直接走缓存）
         long userId = currentUser.getId();
-        currentUser = this.getById(userId);
+        currentUser = this.getById(userId);// getbyid 是mybatis中的方法
         if (currentUser == null) {
             throw new BusinessException(ErrorCode.NOT_LOGIN_ERROR);
         }
@@ -204,6 +210,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         return userVO;
     }
 
+    // 如果有很多用户，这里要返回的是一个整体的vo对象
     @Override
     public List<UserVO> getUserVO(List<User> userList) {
         if (CollUtil.isEmpty(userList)) {
@@ -212,6 +219,7 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements Us
         return userList.stream().map(this::getUserVO).collect(Collectors.toList());
     }
 
+    //搜索用户 补全querywrapper
     @Override
     public QueryWrapper<User> getQueryWrapper(UserQueryRequest userQueryRequest) {
         if (userQueryRequest == null) {
