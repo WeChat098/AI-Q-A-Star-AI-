@@ -1,0 +1,92 @@
+{
+  "groups": [
+    {
+      "name": "ai",
+      "type": "com.edu.yudada.config.AiConfig",
+      "sourceType": "com.edu.yudada.config.AiConfig"
+    },
+    {
+      "name": "cos.client",
+      "type": "com.edu.yudada.config.CosClientConfig",
+      "sourceType": "com.edu.yudada.config.CosClientConfig"
+    },
+    {
+      "name": "spring.redis",
+      "type": "com.edu.yudada.config.RedissonConfig",
+      "sourceType": "com.edu.yudada.config.RedissonConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "ai.api-key",
+      "type": "java.lang.String",
+      "description": "apiKey，需要从开放平台获取",
+      "sourceType": "com.edu.yudada.config.AiConfig"
+    },
+    {
+      "name": "cos.client.access-key",
+      "type": "java.lang.String",
+      "description": "accessKey",
+      "sourceType": "com.edu.yudada.config.CosClientConfig"
+    },
+    {
+      "name": "cos.client.accessKey",
+      "type": "java.lang.String",
+      "description": "Description for cos.client.accessKey."
+    },
+    {
+      "name": "cos.client.bucket",
+      "type": "java.lang.String",
+      "description": "Description for cos.client.bucket.",
+      "sourceType": "com.edu.yudada.config.CosClientConfig"
+    },
+    {
+      "name": "cos.client.region",
+      "type": "java.lang.String",
+      "description": "Description for cos.client.region.",
+      "sourceType": "com.edu.yudada.config.CosClientConfig"
+    },
+    {
+      "name": "cos.client.secret-key",
+      "type": "java.lang.String",
+      "description": "secretKey",
+      "sourceType": "com.edu.yudada.config.CosClientConfig"
+    },
+    {
+      "name": "cos.client.secretKey",
+      "type": "java.lang.String",
+      "description": "Description for cos.client.secretKey."
+    },
+    {
+      "name": "spring.redis.database",
+      "type": "java.lang.Integer",
+      "sourceType": "com.edu.yudada.config.RedissonConfig"
+    },
+    {
+      "name": "spring.redis.host",
+      "type": "java.lang.String",
+      "sourceType": "com.edu.yudada.config.RedissonConfig"
+    },
+    {
+      "name": "spring.redis.password",
+      "type": "java.lang.String",
+      "sourceType": "com.edu.yudada.config.RedissonConfig"
+    },
+    {
+      "name": "spring.redis.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.edu.yudada.config.RedissonConfig"
+    },
+    {
+      "name": "wx.open.appId",
+      "type": "java.lang.String",
+      "description": "Description for wx.open.appId."
+    },
+    {
+      "name": "wx.open.appSecret",
+      "type": "java.lang.String",
+      "description": "Description for wx.open.appSecret."
+    }
+  ],
+  "hints": []
+}
