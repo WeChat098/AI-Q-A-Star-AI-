@@ -36,8 +36,6 @@ import java.util.List;
 /**
  * 用户答案接口
  *
- * @author <a href="https://github.com/liedu">程序员鱼皮</a>
- * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
  */
 @RestController
 @RequestMapping("/userAnswer")
@@ -76,6 +74,7 @@ public class UserAnswerController {
         BeanUtils.copyProperties(userAnswerAddRequest, userAnswer);// 将dto类转换成为实体类
         List<String> choices = userAnswerAddRequest.getChoices();// 获取用户输入的选项
         userAnswer.setChoices(JSONUtil.toJsonStr(choices));//将实体类中的答案填入到用户的答案中
+        userAnswer.setAppId(userAnswerAddRequest.getAppId());// 初始化分数为0
         // 数据校验
         userAnswerService.validUserAnswer(userAnswer, true);// 校验应用ID是否存在
         // 判断 app 是否存在

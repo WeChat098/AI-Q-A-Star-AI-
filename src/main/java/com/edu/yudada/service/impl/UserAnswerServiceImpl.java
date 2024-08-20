@@ -33,8 +33,7 @@ import java.util.stream.Collectors;
 /**
  * 用户答案服务实现
  *
- * @author <a href="https://github.com/liedu">程序员鱼皮</a>
- * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
+
  */
 @Service
 @Slf4j
@@ -63,7 +62,7 @@ public class UserAnswerServiceImpl extends ServiceImpl<UserAnswerMapper, UserAns
             // 补充校验规则
             System.out.println("补充校验规则");
             ThrowUtils.throwIf(appId == null || appId <= 0, ErrorCode.PARAMS_ERROR, "appId 非法");
-            ThrowUtils.throwIf(id == null || id <= 0, ErrorCode.PARAMS_ERROR, "id 非法");
+//            ThrowUtils.throwIf(id == null || id <= 0, ErrorCode.PARAMS_ERROR, "id 非法");
         }
         // 修改数据时，有参数则校验
         // 补充校验规则

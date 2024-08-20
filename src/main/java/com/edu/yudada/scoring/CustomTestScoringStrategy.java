@@ -22,8 +22,7 @@ import java.util.Map;
  * 测评类应用的计算就是计算用户选择的答案最符合哪一个结果 比如用户选择i选了10个 s选了5个， 然后依次去结果中进行比较，找到用户最多的选项匹配的结果
  * 比如说说用户 i有10个 s有5个，来了istj选项，计算结果得到istj是15个
  *
- * @author <a href="https://github.com/liedu">程序员鱼皮</a>
- * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
+
  */
 @ScoringStrategyConfig(appType = 1, scoringStrategy = 0)
 public class CustomTestScoringStrategy implements ScoringStrategy {

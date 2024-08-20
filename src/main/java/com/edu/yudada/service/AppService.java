@@ -12,8 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * 应用服务
  *
- * @author <a href="https://github.com/liedu">程序员鱼皮</a>
- * @from <a href="https://www.code-nav.cn">编程导航学习圈</a>
+
  */
 public interface AppService extends IService<App> { // service中都是继承IService
     //IService<App> 是 MyBatis-Plus 提供的接口，它提供了基本的 CRUD（创建、读取、更新、删除）操作，包括常用的查询方法。通过继承 IService<App>，AppService 接口可以使用这些基本的数据库操作方法。

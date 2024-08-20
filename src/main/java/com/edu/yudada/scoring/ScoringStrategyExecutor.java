@@ -32,6 +32,9 @@ public class ScoringStrategyExecutor {
     public UserAnswer doScore(List<String> choiceList,App app) throws Exception {
         Integer appType = app.getAppType();// 首先获取app的类型
         Integer appScoringStrategy = app.getScoringStrategy();// 获取app的评分策略
+        if (appType == 0 && appScoringStrategy == 1){
+            appScoringStrategy = 0;
+        }
         if (appType == null || appScoringStrategy == null) {
             throw new BusinessException(ErrorCode.SYSTEM_ERROR, "应用配置有误，未找到匹配的策略");
         }

@@ -18,15 +18,15 @@ spring:
   # 数据库配置
   # todo 需替换配置
   datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/yudada
-    username: root
-    password: root
 #    driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://117.72.79.148:3306/yudada
-#    username: yudada
-#    password: x6KKw77yCKmxxHPP
-  # Redis 配置x6KKw77yCKmxxHPP
+#    url: jdbc:mysql://localhost:3306/yudada
+#    username: root
+#    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://117.72.79.148:3306/yudada
+    username: yudada
+    password: x6KKw77yCKmxxHPP
+#   Redis 配置x6KKw77yCKmxxHPP
   # todo 需替换配置，然后取消注释
   redis:
     database: 1
