@@ -4,66 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5a5e499-994b-4ab3-8fcf-668ff5ae1101" name="Changes" comment="补充校验规则">
+    <list default="true" id="b5a5e499-994b-4ab3-8fcf-668ff5ae1101" name="Changes" comment="完善AI评分模块">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/create_table.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/create_table.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/QuestionController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/ScoringResultController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/ScoringResultController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/UserAnswerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/UserAnswerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/generate/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/generate/CodeGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/app/AppAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/app/AppAddRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/app/AppEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/app/AppEditRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/app/AppQueryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/app/AppQueryRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/app/AppUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/app/AppUpdateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/AiGenerateQuestionRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/AiGenerateQuestionRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/QuestionAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/QuestionAddRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/QuestionAnswerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/QuestionAnswerDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/QuestionEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/QuestionEditRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/QuestionQueryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/QuestionQueryRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/QuestionUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/question/QuestionUpdateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/scoringResult/ScoringResultAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/scoringResult/ScoringResultAddRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/scoringResult/ScoringResultEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/scoringResult/ScoringResultEditRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/scoringResult/ScoringResultQueryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/scoringResult/ScoringResultQueryRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/scoringResult/ScoringResultUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/scoringResult/ScoringResultUpdateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/userAnswer/UserAnswerAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/userAnswer/UserAnswerAddRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/userAnswer/UserAnswerEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/userAnswer/UserAnswerEditRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/userAnswer/UserAnswerQueryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/userAnswer/UserAnswerQueryRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/userAnswer/UserAnswerUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/userAnswer/UserAnswerUpdateRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/enums/AppScoringStrategyEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/enums/AppScoringStrategyEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/enums/AppTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/enums/AppTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/enums/ReviewStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/enums/ReviewStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/AppVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/AppVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/QuestionVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/QuestionVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/ScoringResultVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/ScoringResultVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/UserAnswerVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/UserAnswerVO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/scoring/AiTestScoringStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/scoring/AiTestScoringStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/scoring/CustomTestScoringStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/scoring/CustomTestScoringStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/scoring/ScoringStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/scoring/ScoringStrategy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/scoring/ScoringStrategyExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/scoring/ScoringStrategyExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/AppService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/AppService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/QuestionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/QuestionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/ScoringResultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/ScoringResultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/UserAnswerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/UserAnswerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/AppServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/AppServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/QuestionServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/QuestionServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/ScoringResultServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/ScoringResultServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/UserAnswerServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/UserAnswerServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/banner.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/banner.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PostFavourMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PostFavourMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PostMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PostMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/PostThumbMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/PostThumbMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/TemplateController.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/TemplateController.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/TemplateService.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/TemplateService.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/TemplateServiceImpl.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/TemplateServiceImpl.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/model/TemplateAddRequest.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/model/TemplateAddRequest.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/model/TemplateEditRequest.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/model/TemplateEditRequest.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/model/TemplateQueryRequest.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/model/TemplateQueryRequest.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/model/TemplateUpdateRequest.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/model/TemplateUpdateRequest.java.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/model/TemplateVO.java.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/model/TemplateVO.java.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +117,7 @@
       <workItem from="1723733181661" duration="9109000" />
       <workItem from="1723982027903" duration="10143000" />
       <workItem from="1723992720221" duration="3469000" />
-      <workItem from="1724054417309" duration="29388000" />
+      <workItem from="1724054417309" duration="31342000" />
     </task>
     <task id="LOCAL-00001" summary="补充校验规则">
       <option name="closed" value="true" />
@@ -185,7 +127,23 @@
       <option name="project" value="LOCAL" />
       <updated>1724061401116</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="完善AI评分模块">
+      <option name="closed" value="true" />
+      <created>1724164717988</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724164717988</updated>
+    </task>
+    <task id="LOCAL-00003" summary="完善AI评分模块">
+      <option name="closed" value="true" />
+      <created>1724164782756</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724164782756</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +168,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="补充校验规则" />
-    <option name="LAST_COMMIT_MESSAGE" value="补充校验规则" />
+    <MESSAGE value="完善AI评分模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善AI评分模块" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
