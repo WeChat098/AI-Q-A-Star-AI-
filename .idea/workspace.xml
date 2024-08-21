@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5a5e499-994b-4ab3-8fcf-668ff5ae1101" name="Changes" comment="完善AI评分模块">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b5a5e499-994b-4ab3-8fcf-668ff5ae1101" name="Changes" comment="完善AI评分模块" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +115,7 @@
       <workItem from="1723733181661" duration="9109000" />
       <workItem from="1723982027903" duration="10143000" />
       <workItem from="1723992720221" duration="3469000" />
-      <workItem from="1724054417309" duration="31342000" />
+      <workItem from="1724054417309" duration="31693000" />
     </task>
     <task id="LOCAL-00001" summary="补充校验规则">
       <option name="closed" value="true" />
