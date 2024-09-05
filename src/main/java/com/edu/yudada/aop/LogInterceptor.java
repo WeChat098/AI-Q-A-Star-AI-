@@ -14,12 +14,11 @@ import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 
 /**
- * 请求响应日志 AOP
+ * 请求响应日志 AOP  日志校验的AOP
  *
- * @author <a href="https://github.com/liedu">程序员鱼皮</a>
- * @from <a href="https://edu.icu">编程导航知识星球</a>
+
  **/
-@Aspect
+@Aspect // 将该类定义成一个AOP切面用于定义拦截规则
 @Component
 @Slf4j
 public class LogInterceptor {
@@ -27,6 +26,7 @@ public class LogInterceptor {
     /**
      * 执行拦截
      */
+    // 定义一个环绕通知 会在目标方法执行前后被调用 当前包下面的所有方法都会被进行拦截
     @Around("execution(* com.edu.yudada.controller.*.*(..))")
     public Object doInterceptor(ProceedingJoinPoint point) throws Throwable {
         // 计时
@@ -36,11 +36,11 @@ public class LogInterceptor {
         RequestAttributes requestAttributes = RequestContextHolder.currentRequestAttributes();
         HttpServletRequest httpServletRequest = ((ServletRequestAttributes) requestAttributes).getRequest();
         // 生成请求唯一 id
-        String requestId = UUID.randomUUID().toString();
-        String url = httpServletRequest.getRequestURI();
+        String requestId = UUID.randomUUID().toString(); //生成一个唯一的ID，用于标识当前的请求
+        String url = httpServletRequest.getRequestURI(); // 获取请求的URl
         // 获取请求参数
-        Object[] args = point.getArgs();
-        String reqParam = "[" + StringUtils.join(args, ", ") + "]";
+        Object[] args = point.getArgs(); // 获取请求参数
+        String reqParam = "[" + StringUtils.join(args, ", ") + "]"; // 将请求参数转换为Json字符串
         // 输出请求日志
         log.info("request start，id: {}, path: {}, ip: {}, params: {}", requestId, url,
                 httpServletRequest.getRemoteHost(), reqParam);

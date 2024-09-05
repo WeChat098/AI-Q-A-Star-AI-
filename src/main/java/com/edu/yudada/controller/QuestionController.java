@@ -64,7 +64,7 @@ public class QuestionController {
     // region 增删改查
 
     /**
-     * 创建题目
+     * 创建题目 根据传递过来的请求 对数据进行校验 然后创建题目  之后返回新写入的数据id
      *
      * @param questionAddRequest
      * @param request
@@ -92,7 +92,7 @@ public class QuestionController {
     }
 
     /**
-     * 删除题目
+     * 根据传递过来的数据 对用户和数据进行校验 之后删除题目 返回删除的结果
      *
      * @param deleteRequest
      * @param request
@@ -125,7 +125,7 @@ public class QuestionController {
      * @return
      */
     @PostMapping("/update")
-    @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
+    @AuthCheck(mustRole = UserConstant.ADMIN_ROLE) // 使用自定义注解用用户的权限进行校验 只有当前的用户是管理员才可以进行删除
     public BaseResponse<Boolean> updateQuestion(@RequestBody QuestionUpdateRequest questionUpdateRequest) {
         if (questionUpdateRequest == null || questionUpdateRequest.getId() <= 0) {
             throw new BusinessException(ErrorCode.PARAMS_ERROR);
@@ -172,7 +172,7 @@ public class QuestionController {
     @PostMapping("/list/page")
     @AuthCheck(mustRole = UserConstant.ADMIN_ROLE)
     public BaseResponse<Page<Question>> listQuestionByPage(@RequestBody QuestionQueryRequest questionQueryRequest) {
-        long current = questionQueryRequest.getCurrent();
+        long current = questionQueryRequest.getCurrent(); // 这两个是mybatis提供的服务
         long size = questionQueryRequest.getPageSize();
         // 查询数据库
         Page<Question> questionPage = questionService.page(new Page<>(current, size),
@@ -203,7 +203,7 @@ public class QuestionController {
 
     /**
      * 分页获取当前登录用户创建的题目列表
-     *
+     * 只能查询当前用户自己创建的题目列表
      * @param questionQueryRequest
      * @param request
      * @return
@@ -294,7 +294,7 @@ public class QuestionController {
         StringBuilder userMessage = new StringBuilder();
         userMessage.append(app.getAppName()).append("\n");
         userMessage.append(app.getAppDesc()).append("\n");
-        userMessage.append(AppTypeEnum.getEnumByValue(app.getAppType()).getText() + "类").append("\n");
+        userMessage.append(AppTypeEnum.getEnumByValue(app.getAppType()).getText()).append("\n");
         userMessage.append(questionNumber).append("\n");
         userMessage.append(optionNumber);
         return userMessage.toString();
@@ -315,15 +315,18 @@ public class QuestionController {
         String userMessage = getGenerateQuestionUserMessage(app, questionNumber, optionNumber);
         // AI 生成
         String result = aiManager.doSyncRequest(GENERATE_QUESTION_SYSTEM_MESSAGE, userMessage, null);
+        System.out.println("生成的内容");
+        System.out.println(result);
         // 截取需要的 JSON 信息
         int start = result.indexOf("[");
         int end = result.lastIndexOf("]");
         String json = result.substring(start, end + 1);
+        // 通过字符串截取的方式将内容进行截取
         List<QuestionContentDTO> questionContentDTOList = JSONUtil.toList(json, QuestionContentDTO.class);
         return ResultUtils.success(questionContentDTOList);
     }
 
-    @GetMapping("/ai_generate/sse")
+    @GetMapping("/ai_generate/sse") // SSE Server Sent Event
     public SseEmitter aiGenerateQuestionSSE(AiGenerateQuestionRequest aiGenerateQuestionRequest) {
         ThrowUtils.throwIf(aiGenerateQuestionRequest == null, ErrorCode.PARAMS_ERROR);
         // 获取参数
@@ -339,12 +342,16 @@ public class QuestionController {
         SseEmitter sseEmitter = new SseEmitter(0L);
         // AI 生成，SSE 流式返回
         Flowable<ModelData> modelDataFlowable = aiManager.doStreamRequest(GENERATE_QUESTION_SYSTEM_MESSAGE, userMessage, null);
+        System.out.println("生成的流式数据");
         // 左括号计数器，除了默认值外，当回归为 0 时，表示左括号等于右括号，可以截取
         AtomicInteger counter = new AtomicInteger(0);
         // 拼接完整题目
         StringBuilder stringBuilder = new StringBuilder();
+        // 首先获取所有的流式数据，之后对流失数据删除空白字符，删除特殊符号，之后将整个转换成一个个的字符，
+        // 之后对于每个字符进行处理，使用括号匹配算法，当匹配到一个完整的括号的时候，说明已经式一个题目
+        // 将单个题目的结果使用sse发送
         modelDataFlowable
-                .observeOn(Schedulers.io())
+                .observeOn(Schedulers.io()) // 将后续的操作切换到IO线程上执行，因为IO密集型操作，比如网络请求和文件读写，适合在IO线程上执行，避免阻塞到主线程
                 .map(modelData -> modelData.getChoices().get(0).getDelta().getContent())
                 .map(message -> message.replaceAll("\\s", ""))
                 .filter(StrUtil::isNotBlank)

@@ -5,10 +5,9 @@ import com.edu.yudada.common.ErrorCode;
 /**
  * 自定义异常类
  *
- * @author <a href="https://github.com/liedu">程序员鱼皮</a>
- * @from <a href="https://edu.icu">编程导航知识星球</a>
+
  */
-public class BusinessException extends RuntimeException {
+public class BusinessException extends RuntimeException { // 定义这是一个自定义异常，并且是非受检异常，定义了三个构造方法
 
     /**
      * 错误码

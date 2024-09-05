@@ -30,20 +30,15 @@
       "sourceType": "com.edu.yudada.config.CosClientConfig"
     },
     {
-      "name": "cos.client.accessKey",
-      "type": "java.lang.String",
-      "description": "Description for cos.client.accessKey."
-    },
-    {
       "name": "cos.client.bucket",
       "type": "java.lang.String",
-      "description": "Description for cos.client.bucket.",
+      "description": "桶名",
       "sourceType": "com.edu.yudada.config.CosClientConfig"
     },
     {
       "name": "cos.client.region",
       "type": "java.lang.String",
-      "description": "Description for cos.client.region.",
+      "description": "区域",
       "sourceType": "com.edu.yudada.config.CosClientConfig"
     },
     {
@@ -51,11 +46,6 @@
       "type": "java.lang.String",
       "description": "secretKey",
       "sourceType": "com.edu.yudada.config.CosClientConfig"
-    },
-    {
-      "name": "cos.client.secretKey",
-      "type": "java.lang.String",
-      "description": "Description for cos.client.secretKey."
     },
     {
       "name": "spring.redis.database",
@@ -76,16 +66,6 @@
       "name": "spring.redis.port",
       "type": "java.lang.Integer",
       "sourceType": "com.edu.yudada.config.RedissonConfig"
-    },
-    {
-      "name": "wx.open.appId",
-      "type": "java.lang.String",
-      "description": "Description for wx.open.appId."
-    },
-    {
-      "name": "wx.open.appSecret",
-      "type": "java.lang.String",
-      "description": "Description for wx.open.appSecret."
     }
   ],
   "hints": []

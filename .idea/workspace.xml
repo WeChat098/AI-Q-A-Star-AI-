@@ -4,7 +4,200 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5a5e499-994b-4ab3-8fcf-668ff5ae1101" name="Changes" comment="完善AI评分模块" />
+    <list default="true" id="b5a5e499-994b-4ab3-8fcf-668ff5ae1101" name="Changes" comment="完善AI评分模块">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/equalsTest/EqualTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/equalsTest/OuterClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/utils/CustomThreadPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sql/iniit_data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/sql/iniit_data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/MainApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/annotation/AuthCheck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/annotation/AuthCheck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/aop/AuthInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/aop/AuthInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/aop/LogInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/aop/LogInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/common/BaseResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/common/BaseResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/common/DeleteRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/common/DeleteRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/common/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/common/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/common/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/common/PageRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/common/ResultUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/common/ResultUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/config/CosClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/config/CosClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/config/JsonConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/config/JsonConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/constant/CommonConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/constant/CommonConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/constant/FileConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/constant/FileConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/constant/UserConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/constant/UserConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/FileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/FileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/PostController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/PostFavourController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/PostFavourController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/PostThumbController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/PostThumbController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/exception/BusinessException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/exception/BusinessException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/exception/ThrowUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/exception/ThrowUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/manager/AiManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/manager/AiManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/manager/CosManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/manager/CosManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/mapper/PostFavourMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/mapper/PostFavourMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/mapper/PostMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/mapper/PostMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/mapper/PostThumbMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/mapper/PostThumbMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/file/UploadFileRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/file/UploadFileRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/post/PostAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/post/PostAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/post/PostEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/post/PostEditRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/post/PostQueryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/post/PostQueryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/post/PostUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/post/PostUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/postfavour/PostFavourAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/postfavour/PostFavourAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/postfavour/PostFavourQueryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/postfavour/PostFavourQueryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/postthumb/PostThumbAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/postthumb/PostThumbAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserLoginRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserLoginRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserQueryRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserQueryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserRegisterRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserRegisterRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserUpdateMyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserUpdateMyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/dto/user/UserUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/entity/Post.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/entity/Post.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/entity/PostFavour.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/entity/PostFavour.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/entity/PostThumb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/entity/PostThumb.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/enums/FileUploadBizEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/enums/FileUploadBizEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/enums/UserRoleEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/enums/UserRoleEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/LoginUserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/LoginUserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/PostVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/PostVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/UserVO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/model/vo/UserVO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/PostFavourService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/PostFavourService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/PostService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/PostService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/PostThumbService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/PostThumbService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/PostFavourServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/PostFavourServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/PostServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/PostServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/PostThumbServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/PostThumbServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/utils/NetUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/utils/NetUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/utils/SpringContextUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/utils/SpringContextUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/edu/yudada/utils/SqlUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/yudada/utils/SqlUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/META-INF/spring-configuration-metadata.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/MainApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/aop/AuthInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/aop/AuthInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/aop/LogInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/aop/LogInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/BaseResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/BaseResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/DeleteRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/DeleteRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/ErrorCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/ErrorCode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/PageRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/PageRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/ResultUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/ResultUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/ReviewRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/common/ReviewRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/AiConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/AiConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/CorsConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/CorsConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/CosClientConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/CosClientConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/JsonConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/JsonConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/MyBatisPlusConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/MyBatisPlusConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/RedissonConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/RedissonConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/VipSchedulerConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/VipSchedulerConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/VipSchedulerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/config/VipSchedulerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/AppController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/AppController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/FileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/FileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/PostController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/PostController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/PostFavourController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/PostFavourController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/PostThumbController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/PostThumbController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/QuestionController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/QuestionController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/ScoringResultController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/ScoringResultController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/UserAnswerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/UserAnswerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/exception/BusinessException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/exception/BusinessException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/exception/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/exception/ThrowUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/exception/ThrowUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/generate/CodeGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/generate/CodeGenerator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/manager/AiManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/manager/AiManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/manager/CosManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/manager/CosManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/AppMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/AppMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/PostFavourMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/PostFavourMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/PostMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/PostMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/PostThumbMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/PostThumbMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/QuestionMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/QuestionMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/ScoringResultMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/ScoringResultMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/UserAnswerMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/UserAnswerMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/app/AppAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/app/AppAddRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/app/AppEditRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/app/AppEditRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/app/AppQueryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/app/AppQueryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/app/AppUpdateRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/app/AppUpdateRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/file/UploadFileRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/file/UploadFileRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/post/PostAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/post/PostAddRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/post/PostEditRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/post/PostEditRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/post/PostQueryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/post/PostQueryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/post/PostUpdateRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/post/PostUpdateRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/postfavour/PostFavourAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/postfavour/PostFavourAddRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/postfavour/PostFavourQueryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/postfavour/PostFavourQueryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/postthumb/PostThumbAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/postthumb/PostThumbAddRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/AiGenerateQuestionRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/AiGenerateQuestionRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionAddRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionAnswerDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionAnswerDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionContentDTO$Option.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionContentDTO$Option.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionContentDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionContentDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionEditRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionEditRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionQueryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionQueryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionUpdateRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/question/QuestionUpdateRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/scoringResult/ScoringResultAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/scoringResult/ScoringResultAddRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/scoringResult/ScoringResultEditRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/scoringResult/ScoringResultEditRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/scoringResult/ScoringResultQueryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/scoringResult/ScoringResultQueryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/scoringResult/ScoringResultUpdateRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/scoringResult/ScoringResultUpdateRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/statistic/AppAnswerCountDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/statistic/AppAnswerCountDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/statistic/AppAnswerResultCountDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/statistic/AppAnswerResultCountDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserAddRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserLoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserLoginRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserQueryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserQueryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserRegisterRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserRegisterRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserUpdateMyRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserUpdateMyRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserUpdateRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/user/UserUpdateRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/userAnswer/UserAnswerAddRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/userAnswer/UserAnswerAddRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/userAnswer/UserAnswerEditRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/userAnswer/UserAnswerEditRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/userAnswer/UserAnswerQueryRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/userAnswer/UserAnswerQueryRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/userAnswer/UserAnswerUpdateRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/dto/userAnswer/UserAnswerUpdateRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/Post.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/Post.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/PostFavour.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/PostFavour.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/PostThumb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/PostThumb.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/Question.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/Question.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/ScoringResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/ScoringResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/UserAnswer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/entity/UserAnswer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/enums/AppScoringStrategyEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/enums/AppScoringStrategyEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/enums/AppTypeEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/enums/AppTypeEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/enums/FileUploadBizEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/enums/FileUploadBizEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/enums/ReviewStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/enums/ReviewStatusEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/enums/UserRoleEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/enums/UserRoleEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/AppVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/AppVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/LoginUserVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/LoginUserVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/PostVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/PostVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/QuestionVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/QuestionVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/ScoringResultVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/ScoringResultVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/UserAnswerVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/UserAnswerVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/UserVO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/model/vo/UserVO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/AiTestScoringStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/AiTestScoringStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/CustomScoreScoringStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/CustomScoreScoringStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/CustomTestScoringStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/CustomTestScoringStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/ScoringStrategy.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/ScoringStrategy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/ScoringStrategyContext$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/ScoringStrategyContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/ScoringStrategyContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/ScoringStrategyExecutor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/scoring/ScoringStrategyExecutor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/AppService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/AppService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/PostFavourService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/PostFavourService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/PostService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/PostService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/PostThumbService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/PostThumbService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/QuestionService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/QuestionService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/ScoringResultService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/ScoringResultService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/UserAnswerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/UserAnswerService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/AppServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/AppServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/PostFavourServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/PostFavourServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/PostServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/PostServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/PostThumbServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/PostThumbServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/QuestionServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/QuestionServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/ScoringResultServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/ScoringResultServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/UserAnswerServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/UserAnswerServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/utils/NetUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/utils/NetUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/utils/SpringContextUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/utils/SpringContextUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/edu/yudada/utils/SqlUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/edu/yudada/utils/SqlUtils.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,35 +231,38 @@
     <option name="showLibraryContents" value="true" />
     <option name="showScratchesAndConsoles" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Maven.yudada-backend [clean].executor": "Run",
-    "Maven.yudada-backend [package].executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.MainApplication (1).executor": "Run",
-    "Spring Boot.MainApplication.executor": "Run",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "G:/EveryDayProgrammer",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.CustomThreadPool.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EqualTest.executor&quot;: &quot;Run&quot;,
+    &quot;Application.test.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.yudada-backend [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.yudada-backend [package].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.MainApplication (1).executor&quot;: &quot;Run&quot;,
+    &quot;Spring Boot.MainApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/EveryDayProgrammer&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;http.proxy&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "redis",
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;redis&quot;,
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -76,7 +272,46 @@
       <recent name="G:\yudada\yudada-backend\src\main\java\com\edu\yudada\config" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.EqualTest">
+    <configuration name="CustomThreadPool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.edu.yudada.utils.CustomThreadPool" />
+      <module name="yudada-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.edu.yudada.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EqualTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.edu.yudada.equalsTest.EqualTest" />
+      <module name="yudada-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.edu.yudada.equalsTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.edu.yudada.utils.test" />
+      <module name="yudada-backend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.edu.yudada.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MainApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="yudada-backend" />
@@ -93,7 +328,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EqualTest" />
+        <item itemvalue="Application.CustomThreadPool" />
         <item itemvalue="Spring Boot.MainApplication" />
+        <item itemvalue="Application.test" />
       </list>
     </recent_temporary>
   </component>
@@ -115,7 +353,13 @@
       <workItem from="1723733181661" duration="9109000" />
       <workItem from="1723982027903" duration="10143000" />
       <workItem from="1723992720221" duration="3469000" />
-      <workItem from="1724054417309" duration="31693000" />
+      <workItem from="1724054417309" duration="33872000" />
+      <workItem from="1724241727649" duration="947000" />
+      <workItem from="1724299780394" duration="24518000" />
+      <workItem from="1724431149740" duration="2545000" />
+      <workItem from="1724743333904" duration="21725000" />
+      <workItem from="1725070384205" duration="9264000" />
+      <workItem from="1725374297205" duration="5784000" />
     </task>
     <task id="LOCAL-00001" summary="补充校验规则">
       <option name="closed" value="true" />
@@ -184,6 +428,52 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/edu/yudada/manager/AiManager.java</url>
+          <line>147</line>
+          <properties class="com.edu.yudada.manager.AiManager" method="doStreamRequest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/edu/yudada/manager/AiManager.java</url>
+          <line>98</line>
+          <properties class="com.edu.yudada.manager.AiManager" method="doRequest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/edu/yudada/manager/AiManager.java</url>
+          <line>75</line>
+          <properties class="com.edu.yudada.manager.AiManager" method="doRequest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/edu/yudada/manager/AiManager.java</url>
+          <line>129</line>
+          <properties class="com.edu.yudada.manager.AiManager" method="doStreamRequest">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/QuestionController.java</url>
+          <line>293</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/edu/yudada/controller/QuestionController.java</url>
+          <line>328</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

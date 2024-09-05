@@ -35,6 +35,7 @@ public class AiManager {
      * @return
      */
     public String doSyncUnstableRequest(String systemMessage, String userMessage) {
+        // 同步请求不稳定的随机数的请求器
         return doRequest(systemMessage, userMessage, Boolean.FALSE, UNSTABLE_TEMPERATURE);
     }
 
@@ -46,6 +47,7 @@ public class AiManager {
      * @return
      */
     public String doSyncStableRequest(String systemMessage, String userMessage) {
+        // 同步请求中不稳定随机数的请求器
         return doRequest(systemMessage, userMessage, Boolean.FALSE, STABLE_TEMPERATURE);
     }
 
@@ -58,25 +60,32 @@ public class AiManager {
      * @return
      */
     public String doSyncRequest(String systemMessage, String userMessage, Float temperature) {
+        // 做同步的请求
         return doRequest(systemMessage, userMessage, Boolean.FALSE, temperature);
     }
 
     /**
      * 通用请求（简化消息传递）
      *
-     * @param systemMessage
-     * @param userMessage
+     * @param systemMessage 其中系统信息是自己写的prompt
+     * @param userMessage 用户信息表示自己传递的信息
      * @param stream
      * @param temperature
      * @return
      */
     public String doRequest(String systemMessage, String userMessage, Boolean stream, Float temperature) {
-        List<ChatMessage> chatMessageList = new ArrayList<>();
+        System.out.println("显示系统信息和用户信息");
+        System.out.println(systemMessage);
+        System.out.println("显示用户信息");
+        System.out.println(userMessage);
+        System.out.println("显示系统信息和用户信息");
+        // 构建请求
+        List<ChatMessage> chatMessageList = new ArrayList<>(); // 构建消息列表 里面的数据类型是ChatMessage
         ChatMessage systemChatMessage = new ChatMessage(ChatMessageRole.SYSTEM.value(), systemMessage);
         chatMessageList.add(systemChatMessage);
         ChatMessage userChatMessage = new ChatMessage(ChatMessageRole.USER.value(), userMessage);
         chatMessageList.add(userChatMessage);
-        return doRequest(chatMessageList, stream, temperature);
+        return doRequest(chatMessageList, stream, temperature);// 这个chatMessageList中包含用户信息和系统信息
     }
 
     /**
@@ -90,14 +99,19 @@ public class AiManager {
     public String doRequest(List<ChatMessage> messages, Boolean stream, Float temperature) {
         // 构建请求
         ChatCompletionRequest chatCompletionRequest = ChatCompletionRequest.builder()
-                .model(Constants.ModelChatGLM4)
-                .stream(stream)
-                .temperature(temperature)
-                .invokeMethod(Constants.invokeMethod)
-                .messages(messages)
+                .model(Constants.ModelChatGLM4)// 表示调用的模型
+                .stream(stream)// 是否以流的形式返回响应
+                .temperature(temperature)// 回答的的随机性
+                .invokeMethod(Constants.invokeMethod)// 调用invokeMethod方法
+                .messages(messages)// 传递聊天的信息
                 .build();
+        System.out.println("显示请求信息");
+        System.out.println(chatCompletionRequest.toString());
         try {
             ModelApiResponse invokeModelApiResp = clientV4.invokeModelApi(chatCompletionRequest);
+            System.out.println("返回的数据");
+            System.out.println(invokeModelApiResp.getData()+"请求的数据");
+            System.out.println(invokeModelApiResp.getData().getChoices()+"请求的数据");
             return invokeModelApiResp.getData().getChoices().get(0).toString();
         } catch (Exception e) {
             e.printStackTrace();
@@ -111,8 +125,10 @@ public class AiManager {
      * @param userMessage
      * @param temperature
      * @return
+     * 首先流式的构建请求，之后调用doStramrequest方法 请求数据
      */
     public Flowable<ModelData> doStreamRequest(String systemMessage, String userMessage, Float temperature) {
+        // 流式的请求数据
         List<ChatMessage> chatMessageList = new ArrayList<>();
         ChatMessage systemChatMessage = new ChatMessage(ChatMessageRole.SYSTEM.value(), systemMessage);
         chatMessageList.add(systemChatMessage);

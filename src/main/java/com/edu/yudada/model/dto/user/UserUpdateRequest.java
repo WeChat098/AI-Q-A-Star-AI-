@@ -6,8 +6,7 @@ import lombok.Data;
 /**
  * 用户更新请求 管理员更新所有用户的请求
  *
- * @author <a href="https://github.com/liedu">程序员鱼皮</a>
- * @from <a href="https://edu.icu">编程导航知识星球</a>
+
  */
 @Data
 public class UserUpdateRequest implements Serializable {

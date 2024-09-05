@@ -10,10 +10,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 /**
  * 全局异常处理器
  *
- * @author <a href="https://github.com/liedu">程序员鱼皮</a>
- * @from <a href="https://edu.icu">编程导航知识星球</a>
+
  */
-@RestControllerAdvice
+@RestControllerAdvice // 是ControllerAdvice和responseBody两个注解的结合提 用于定义全局的异常处理类 能够统一处理Controller层抛出的异常，返回响应的响应
 @Slf4j
 public class GlobalExceptionHandler {
 
